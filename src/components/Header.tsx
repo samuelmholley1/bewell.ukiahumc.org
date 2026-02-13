@@ -4,11 +4,10 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 const navigation = [
-  { name: 'What We Are', href: '#what' },
-  { name: "Who It's For", href: '#who' },
-  { name: 'Our Progress', href: '#progress' },
-  { name: 'Get Involved', href: '#involved' },
-  { name: 'FAQ', href: '#faq' },
+  { name: 'The Need', href: '#need' },
+  { name: 'Our Vision', href: '#vision' },
+  { name: 'Help', href: '#help' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const Header = () => {
@@ -25,11 +24,11 @@ const Header = () => {
               className="flex items-center space-x-3 text-primary hover:opacity-90 transition-opacity"
             >
               <Image
-                src="/be-well-icon.png"
+                src="/BeWell-icon-transparent.png"
                 alt="Be Well Center logo"
                 width={48}
                 height={48}
-                className="rounded-lg shadow-sm"
+                className=""
               />
               <span className="text-lg sm:text-2xl font-bold text-primary leading-none">
                 Be Well Center
@@ -53,10 +52,10 @@ const Header = () => {
             ))}
             <div className="ml-4">
               <a
-                href="#waitlist"
+                href="#help"
                 className="btn-primary inline-block text-center"
               >
-                Join Waitlist
+                Get Involved
               </a>
             </div>
           </nav>
@@ -111,18 +110,11 @@ const Header = () => {
               ))}
               <div className="pt-4 border-t border-gray-100 space-y-2">
                 <a
-                  href="tel:+17070000000"
-                  className="block px-4 py-3 text-primary font-medium hover:bg-gray-50 rounded-lg transition-colors duration-200 text-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  📞 (707) XXX-XXXX
-                </a>
-                <a
-                  href="#waitlist"
+                  href="#help"
                   className="block px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition-opacity duration-200 text-center shadow-sm"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Join Waitlist
+                  Get Involved
                 </a>
               </div>
             </div>

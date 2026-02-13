@@ -6,77 +6,42 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="py-12 md:py-20 lg:py-24"
-      style={{
-        background:
-          'linear-gradient(to bottom, var(--color-neutral-bg), color-mix(in srgb, var(--color-accent) 5%, white), var(--color-neutral-bg))',
-      }}
+      className="relative overflow-hidden"
     >
-      <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Left Column — Headline & Info */}
-          <div className="space-y-6 text-center lg:text-left">
-            <Image
-              src="/be-well-icon.png"
-              alt="Be Well Center logo"
-              width={80}
-              height={80}
-              className="rounded-lg shadow-md mx-auto lg:mx-0"
-              priority
-            />
+      {/* Background photo placeholder */}
+      <div className="absolute inset-0 z-0">
+        {/* PHOTO PLACEHOLDER: hero-bg.jpg — warm, soft-focus image of
+            elderly hands being held, or a sunlit garden/courtyard.
+            See PROGRESS.md for sourcing guidance. */}
+        <div className="w-full h-full bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/10" />
+        <div className="absolute inset-0 bg-white/80" />
+      </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-primary">
-              Be Well Center
-            </h1>
+      <div className="container relative z-10 py-16 md:py-24 lg:py-32">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <Image
+            src="/BeWell-logo-transparent.png"
+            alt="Be Well Center logo"
+            width={120}
+            height={120}
+            className="mx-auto"
+            priority
+          />
 
-            <p className="text-2xl md:text-3xl font-semibold text-primary/80">
-              Adult Day Memory Care in Ukiah
-            </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+            Ukiah needs a place for families facing memory loss.
+          </h1>
 
-            <p className="text-xl text-text/80 max-w-xl mx-auto lg:mx-0">
-              Dignity-filled daytime support for adults living with memory
-              loss—and respite for the caregivers who love them.
-            </p>
+          <p className="text-xl md:text-2xl text-text/80 max-w-2xl mx-auto">
+            We&rsquo;re building it. Help us open our doors.
+          </p>
 
-            <div className="pt-2">
-              <p className="text-lg font-semibold text-primary">
-                Prefer to talk?
-              </p>
-              <a
-                href="tel:+17070000000"
-                className="inline-flex items-center gap-2 text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
-                (707) XXX-XXXX
-              </a>
-            </div>
-          </div>
-
-          {/* Right Column — CTA Buttons */}
-          <div className="space-y-4 max-w-md mx-auto lg:mx-0 w-full">
+          <div className="pt-4">
             <a
-              href="#waitlist"
-              className="block w-full text-center text-xl py-4 px-6 font-semibold rounded-lg shadow-md transition-all duration-200 bg-primary text-white hover:bg-primary/90 hover:shadow-lg"
+              href="#help"
+              className="inline-block text-xl py-4 px-10 font-semibold rounded-lg shadow-lg transition-all duration-200 bg-primary text-white hover:bg-primary/90 hover:shadow-xl"
             >
-              Join Waitlist
-            </a>
-            <a
-              href="#involved"
-              className="block w-full text-center text-xl py-4 px-6 font-semibold rounded-lg shadow-md transition-all duration-200 bg-secondary text-white hover:bg-secondary/90 hover:shadow-lg"
-            >
-              Donate
-            </a>
-            <a
-              href="#faq"
-              className="block w-full text-center text-xl py-4 px-6 font-semibold rounded-lg shadow-md transition-all duration-200 border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white"
-            >
-              Learn More
+              Get Involved
             </a>
           </div>
         </div>

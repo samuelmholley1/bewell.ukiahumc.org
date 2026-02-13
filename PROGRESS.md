@@ -31,22 +31,11 @@
 - [x] Verified NO tailwind.config.js created
 - [x] Update layout.tsx with next/font (Inter + Merriweather)
 
-### Phase 4: Components
-- [x] Header.tsx (sticky, mobile menu, nav links)
-- [x] Footer.tsx (3-col grid, contact info, ukiahumc.org email)
-- [x] Button.tsx — updated colors from blue-600 to primary
-- [x] LoadingStates.tsx — updated spinner color to primary
-- [x] Modal.tsx, Toast.tsx (kept as-is, brand-agnostic)
-- [x] Section.tsx (wrapper)
-- [x] Hero.tsx (2-col, CTAs)
-- [x] WhatWeAre.tsx
-- [x] WhoItsFor.tsx
-- [x] ProcessTimeline.tsx
-- [x] GetInvolved.tsx
-- [x] FAQ.tsx (accordion)
-- [x] RootedInUkiah.tsx
+### Phase 4: Components (Initial MVP)
+- [x] Header.tsx, Footer.tsx, Button.tsx, LoadingStates.tsx, Modal.tsx, Toast.tsx, Section.tsx
+- [x] Hero, WhatWeAre, WhoItsFor, ProcessTimeline, GetInvolved, FAQ, RootedInUkiah
 
-### Phase 5: Assembly
+### Phase 5: Assembly (Initial MVP)
 - [x] page.tsx (import all sections + waitlist placeholder)
 - [x] layout.tsx (Header + Footer wrapping children, metadata, OG tags)
 
@@ -54,6 +43,40 @@
 - [x] Create GitHub repo: samuelmholley1/bewell.ukiahumc.org
 - [x] Initial commit + push (42 files, 7225 insertions)
 - [ ] Vercel deployment (user handles)
+
+### Phase 7: Redesign — Donor/Volunteer/Board Recruitment Focus
+- [x] Streamlined from 8 sections → 5 (Hero → The Need → The Vision → How to Help → Contact)
+- [x] Rewrote Hero.tsx — emotional hook, single CTA, photo placeholder
+- [x] Created TheNeed.tsx — gap in Mendocino County services, photo placeholder
+- [x] Created TheVision.tsx — 3-bullet vision, photo placeholder
+- [x] Created HowToHelp.tsx — 3 cards: Donate / Volunteer / Join Our Board
+- [x] Created Contact.tsx — email + phone cards, church attribution
+- [x] Updated Header.tsx — 4 nav items (The Need, Our Vision, Help, Contact), "Get Involved" CTA
+- [x] Updated Footer.tsx — quick links match new section IDs, phone number added
+- [x] Rebuilt page.tsx — imports new 5 sections only
+- [x] Deleted old components (WhatWeAre, WhoItsFor, ProcessTimeline, GetInvolved, FAQ, RootedInUkiah)
+- [x] Switched to transparent logo assets (BeWell-icon-transparent.png, BeWell-logo-transparent.png)
+- [x] Build passes: 779 B page, 108 kB first load JS (down from 4.21 kB / 112 kB)
+
+---
+
+## Photo Sourcing Guide
+
+The site has **3 photo placeholders** that need real images. Drop them in `public/` with these exact filenames.
+
+| Placeholder | Filename | What to Use | Where It Appears |
+|---|---|---|---|
+| Hero background | `hero-bg.jpg` | Warm, soft-focus image — elderly hands being held, a sunlit garden, or a peaceful courtyard. Emotional, not clinical. | Full-bleed behind the hero headline |
+| The Need section | `need-photo.jpg` | A caregiver looking tired but caring — or an elderly person alone. Should evoke empathy, not pity. Could be a stock photo of an empty chair / quiet living room. | Left column of "The Need" 2-col grid |
+| The Vision section | `vision-photo.jpg` | Bright, welcoming interior — a community room with natural light, plants, art supplies, or people doing an activity together. Aspirational. | Right column of "Our Vision" 2-col grid |
+
+**Sourcing tips:**
+- **Unsplash** (unsplash.com) — free, high quality, no attribution required
+- **Pexels** (pexels.com) — free, good elderly care / community images
+- Search terms: "elderly care", "senior hands", "memory care", "community center interior", "caregiver", "sunlit room"
+- Aim for **1200×800px minimum**, landscape orientation
+- Keep file sizes under 500KB (compress with squoosh.app if needed)
+- After adding images, update the components to use `<Image src="/hero-bg.jpg" ... />` etc. in place of the gradient placeholders
 
 ---
 
@@ -67,7 +90,7 @@
 
 4. **`color-mix()` for hover states** — Used `color-mix(in srgb, var(--color-primary) 90%, black)` in component classes. Supported in all modern browsers (Chrome 111+, Firefox 113+, Safari 16.4+). No polyfill needed for 2026 target audience.
 
-5. **Dev server first load** — `yarn dev` starts in ~4 seconds. Build output: 4.21 kB page, 112 kB first load JS shared. Fully static — no server-side rendering needed.
+5. **Dev server first load** — `yarn dev` starts in ~4 seconds. Build output (post-redesign): 779 B page, 108 kB first load JS shared. Fully static — no server-side rendering needed.
 
 6. **temp clone cleanup** — `bewell-temp-clone` folder on Desktop may still be locked. Delete manually if it persists.
 

@@ -1,7 +1,8 @@
 const quickLinks = [
-  { name: 'Join Waitlist', href: '#waitlist' },
-  { name: 'Ways to Help', href: '#involved' },
-  { name: 'FAQ', href: '#faq' },
+  { name: 'The Need', href: '#need' },
+  { name: 'Our Vision', href: '#vision' },
+  { name: 'How to Help', href: '#help' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const Footer = () => {
@@ -58,10 +59,10 @@ const Footer = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <a
-                  href="tel:+17070000000"
+                  href="tel:+17074626226"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  (707) XXX-XXXX
+                  (707) 462-6226
                 </a>
               </div>
 
