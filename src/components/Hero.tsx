@@ -8,13 +8,16 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden"
     >
-      {/* Background photo placeholder */}
+      {/* Background photo */}
       <div className="absolute inset-0 z-0">
-        {/* PHOTO PLACEHOLDER: hero-bg.jpg — warm, soft-focus image of
-            elderly hands being held, or a sunlit garden/courtyard.
-            See PROGRESS.md for sourcing guidance. */}
-        <div className="w-full h-full bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/10" />
-        <div className="absolute inset-0 bg-white/80" />
+        <Image
+          src="/hero-bg.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-white/75" />
       </div>
 
       <div className="container relative z-10 py-16 md:py-24 lg:py-32">

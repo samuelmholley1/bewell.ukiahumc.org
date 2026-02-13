@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Section from './Section';
 
 export default function TheNeed() {
@@ -5,16 +6,14 @@ export default function TheNeed() {
     <Section id="need" bgColor="white">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Photo placeholder */}
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-secondary/20 to-accent/10">
-            {/* PHOTO PLACEHOLDER: need-photo.jpg — candid photo of an older
-                adult and caregiver, or a Mendocino County landscape
-                (vineyards, rolling hills). See PROGRESS.md for sourcing. */}
-            <div className="absolute inset-0 flex items-center justify-center text-primary/30">
-              <svg className="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
+          {/* Photo */}
+          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/need-photo.png"
+              alt="The need for memory care in Mendocino County"
+              fill
+              className="object-cover"
+            />
           </div>
 
           {/* Content */}
