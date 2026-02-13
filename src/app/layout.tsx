@@ -19,7 +19,7 @@ const merriweather = Merriweather({
 
 const siteTitle = "Be Well Center — Adult Day Memory Care (Opening Soon)";
 const siteDescription =
-  "Dignity-filled daytime support for adults living with memory loss in Ukiah, CA. A ministry of Ukiah United Methodist Church. Join our waitlist today.";
+  "Dignity-filled daytime support for adults living with memory loss in Ukiah, CA. A community project supported by Ukiah United Methodist Church.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bewell.ukiahumc.org"),

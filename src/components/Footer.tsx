@@ -19,7 +19,7 @@ const Footer = () => {
               Adult Day Memory Care in Ukiah, CA
             </p>
             <p className="text-white/70 text-sm leading-relaxed">
-              A ministry of Ukiah United Methodist Church
+              Supported by Ukiah United Methodist Church
             </p>
             <div className="text-sm text-white/60">
               <p>&copy; {new Date().getFullYear()} Be Well Center</p>
