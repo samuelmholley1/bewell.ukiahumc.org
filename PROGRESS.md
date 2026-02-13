@@ -58,11 +58,22 @@
 - [x] Switched to transparent logo assets (BeWell-icon-transparent.png, BeWell-logo-transparent.png)
 - [x] Build passes: 779 B page, 108 kB first load JS (down from 4.21 kB / 112 kB)
 
+### Phase 8: Photos
+- [x] Generated hero-bg.png, need-photo.png, vision-photo.png (AI-generated)
+- [x] Wired into Hero, TheNeed, TheVision — no more gradient placeholders
+- [x] Build passes: 770 B page, 108 kB first load JS
+
+### Phase 9: Favicons & OG Image
+- [x] Generated favicons from BeWell-icon-transparent.png (16, 32, 48, 180, 192, 512px)
+- [x] Created OG image (1200×630) — cream bg, Be Well logo, tagline
+- [x] Build passes: 770 B page, 108 kB first load JS
+- [x] Committed + pushed
+
 ---
 
 ## Photo Sourcing Guide
 
-The site has **3 photo placeholders** that need real images. Drop them in `public/` with these exact filenames.
+~~The site has **3 photo placeholders** that need real images.~~ **DONE** — All 3 photos generated and wired in (Phase 8).
 
 | Placeholder | Filename | What to Use | Where It Appears |
 |---|---|---|---|
