@@ -25,16 +25,16 @@ const sourceSans = Source_Sans_3({
   variable: "--font-ui",
 });
 
-const siteTitle = "Be Well Center — Adult Day Memory Care (Opening Soon)";
+const siteTitle = "Be Well Center — Adult Day Services in Ukiah, CA (Opening Soon)";
 const siteDescription =
-  "Dignity-filled daytime support for adults living with memory loss in Ukiah, CA. A community project supported by Ukiah United Methodist Church.";
+  "A place of dignity for adults who need a little more care. Daytime support, connection, and respite for families in Ukiah, CA. Supported by Ukiah United Methodist Church.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bewell.ukiahumc.org"),
   title: siteTitle,
   description: siteDescription,
   keywords:
-    "adult day care, memory care, dementia care, Ukiah, Mendocino County, caregiver respite, Alzheimer's support",
+    "adult day care, adult day services, memory care, caregiver respite, senior care, Ukiah, Mendocino County, disabled adults, aging support",
   openGraph: {
     title: siteTitle,
     description: siteDescription,

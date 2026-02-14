@@ -3,7 +3,7 @@ import Section from './Section';
 const cards = [
   {
     title: 'Donate',
-    description: 'Your gift helps us secure a facility, hire trained staff, and open our doors to families who need us.',
+    description: 'Your gift helps us secure a facility, hire trained staff, and open our doors to the families and adults who need us most.',
     cta: 'Make a Gift',
     href: '#contact',
     icon: (

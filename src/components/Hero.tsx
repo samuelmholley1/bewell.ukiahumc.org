@@ -30,11 +30,11 @@ export default function Hero() {
           />
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary leading-tight text-balance">
-            Ukiah needs a place for families facing memory loss.
+            A place of dignity for adults who need a little more care.
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text/80 max-w-2xl mx-auto text-pretty">
-            We&rsquo;re building it. Help us open our doors.
+            The Be Well Center is coming to Ukiah &mdash; daytime support, connection, and respite for families.
           </p>
 
           <div className="pt-1">

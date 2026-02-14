@@ -8,7 +8,7 @@ const points = [
         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
       </svg>
     ),
-    text: 'A safe, structured daytime program for adults with early to moderate memory loss',
+    text: 'A safe, structured daytime program for adults who need a little more support',
   },
   {
     icon: (
@@ -39,7 +39,7 @@ export default function TheVision() {
               Our Vision
             </h2>
             <p className="text-base sm:text-lg text-text/80 leading-relaxed text-pretty">
-              The Be Well Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities and families find peace of mind.
+              The Be Well Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities, build community, and families find peace of mind.
             </p>
             <ul className="space-y-4">
               {points.map((point, i) => (

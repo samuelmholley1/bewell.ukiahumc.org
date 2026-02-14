@@ -16,7 +16,7 @@ const Footer = () => {
               Be Well Center
             </h3>
             <p className="text-white/80 leading-relaxed">
-              Adult Day Memory Care in Ukiah, CA
+              Adult Day Services in Ukiah, CA
             </p>
             <p className="text-white/70 text-sm leading-relaxed">
               Supported by Ukiah United Methodist Church
@@ -108,7 +108,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-white/70">
-              Dignity-filled daytime support for adults living with memory loss.
+              A place of dignity for adults who need a little more care.
             </p>
             <p className="text-sm text-white/70">
               Website by{' '}
