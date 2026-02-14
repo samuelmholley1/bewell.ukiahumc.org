@@ -9,8 +9,8 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const pub = (...p) => join(__dirname, '..', 'public', ...p);
 
-const icon = pub('BeWell-icon-transparent.png');
-const logo = pub('BeWell-logo-transparent.png');
+const icon = pub('bewell_icon_transparent.png');
+const logo = pub('bewell_logo_transparent.png');
 
 async function generateFavicons() {
   console.log('Generating favicons from BeWell-icon-transparent.png...');
@@ -34,7 +34,7 @@ async function generateFavicons() {
     .resize(160, 160, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .extend({
       top: 10, bottom: 10, left: 10, right: 10,
-      background: { r: 248, g: 245, b: 240, alpha: 1 }, // #F8F5F0
+      background: { r: 247, g: 243, b: 234, alpha: 1 }, // #F7F3EA
     })
     .png()
     .toFile(pub('apple-touch-icon.png'));
@@ -67,10 +67,10 @@ async function generateOgImage() {
 
   // Get logo dimensions to scale it
   const logoMeta = await sharp(logo).metadata();
-  const maxLogoHeight = 200;
-  const scale = maxLogoHeight / logoMeta.height;
+  const maxLogoHeight = 400;
+  const scale = Math.min(maxLogoHeight / logoMeta.height, 1000 / logoMeta.width);
   const logoWidth = Math.round(logoMeta.width * scale);
-  const logoHeight = maxLogoHeight;
+  const logoHeight = Math.round(logoMeta.height * scale);
 
   // Resize logo
   const resizedLogo = await sharp(logo)
@@ -78,38 +78,23 @@ async function generateOgImage() {
     .png()
     .toBuffer();
 
-  // Create OG canvas: cream background with logo centered + tagline area
+  // Create OG canvas: cream background with logo centered (no text)
   const width = 1200;
   const height = 630;
-
-  // Create text SVG for the tagline
-  const taglineSvg = `<svg width="${width}" height="${height}">
-    <style>
-      .title { fill: #6B7F4E; font-size: 42px; font-family: Georgia, serif; font-weight: bold; }
-      .subtitle { fill: #4B5563; font-size: 24px; font-family: Arial, sans-serif; }
-    </style>
-    <text x="600" y="${315 + logoHeight / 2 + 50}" text-anchor="middle" class="title">Adult Day Memory Care</text>
-    <text x="600" y="${315 + logoHeight / 2 + 90}" text-anchor="middle" class="subtitle">Ukiah, CA · Opening Soon</text>
-  </svg>`;
 
   await sharp({
     create: {
       width,
       height,
       channels: 4,
-      background: { r: 248, g: 245, b: 240, alpha: 1 }, // #F8F5F0
+      background: { r: 247, g: 243, b: 234, alpha: 1 }, // #F7F3EA
     },
   })
     .composite([
       {
         input: resizedLogo,
-        top: Math.round((height - logoHeight) / 2 - 60),
+        top: Math.round((height - logoHeight) / 2),
         left: Math.round((width - logoWidth) / 2),
-      },
-      {
-        input: Buffer.from(taglineSvg),
-        top: 0,
-        left: 0,
       },
     ])
     .png()
