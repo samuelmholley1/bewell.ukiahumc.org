@@ -28,13 +28,14 @@ const Header = () => {
                 alt="Be Well Center"
                 width={48}
                 height={48}
+                className="w-10 h-10 sm:w-12 sm:h-12"
               />
               <Image
                 src="/bewell_logo_text_transparent.png"
                 alt=""
                 width={160}
                 height={40}
-                className="h-8 sm:h-9 md:h-10 w-auto"
+                className="h-9 sm:h-10 md:h-11 w-auto"
               />
             </a>
           </div>

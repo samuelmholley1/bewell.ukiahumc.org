@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden min-h-[calc(100svh-5rem)]"
+      className="relative overflow-hidden min-h-screen"
     >
       {/* Background photo */}
       <div className="absolute inset-0 z-0">
@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-white/75" />
       </div>
 
-      <div className="container relative z-10 flex items-center justify-center min-h-[calc(100svh-5rem)] py-6">
+      <div className="container relative z-10 flex items-center justify-center min-h-screen py-8 sm:py-12">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center justify-items-center w-full max-w-5xl mx-auto">
           {/* Logo — stacked on mobile, left column on desktop */}
           <div className="flex justify-center">
@@ -27,25 +27,25 @@ export default function Hero() {
               alt="Be Well Center logo"
               width={500}
               height={500}
-              className="w-32 sm:w-40 md:w-48 lg:w-64 xl:w-72 drop-shadow-lg"
+              className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 drop-shadow-lg"
               priority
             />
           </div>
 
           {/* Text — stacked on mobile, right column on desktop */}
-          <div className="text-center space-y-3 sm:space-y-4">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-primary leading-tight text-balance">
+          <div className="text-center space-y-4 sm:space-y-5">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-primary leading-snug text-balance">
               A place of dignity for adults who need a little more care.
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text/80 max-w-xl mx-auto text-pretty">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-text/80 max-w-2xl mx-auto text-pretty leading-relaxed">
               The Be Well Adult Day Center is coming to Ukiah &mdash; daytime support, connection, and respite for families.
             </p>
 
-            <div className="pt-1">
+            <div className="pt-2">
               <a
                 href="#help"
-                className="inline-block text-sm sm:text-base md:text-lg lg:text-xl py-2.5 sm:py-3 md:py-4 px-6 sm:px-8 md:px-10 font-semibold rounded-lg shadow-lg transition-all duration-200 bg-primary text-white hover:bg-primary/90 hover:shadow-xl"
+                className="inline-block text-base sm:text-lg md:text-xl lg:text-2xl py-3 sm:py-4 md:py-5 px-8 sm:px-10 md:px-12 font-semibold rounded-lg shadow-lg transition-all duration-200 bg-primary text-white hover:bg-primary/90 hover:shadow-xl"
               >
                 Get Involved
               </a>
