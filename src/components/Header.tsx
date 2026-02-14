@@ -25,14 +25,17 @@ const Header = () => {
             >
               <Image
                 src="/BeWell-icon-transparent.png"
-                alt="Be Well Center logo"
+                alt="Be Well Center"
                 width={48}
                 height={48}
-                className=""
               />
-              <span className="text-base sm:text-lg md:text-2xl font-bold text-primary leading-none">
-                Be Well Center
-              </span>
+              <Image
+                src="/BeWell-logo-text-transparent.png"
+                alt=""
+                width={160}
+                height={40}
+                className="h-8 sm:h-9 md:h-10 w-auto"
+              />
             </a>
           </div>
 
