@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="container relative z-10 flex items-center justify-center min-h-[calc(100svh-5rem)] py-6">
         <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
           <Image
-            src="/BeWell-logo-transparent.png"
+            src="/bewell_logo_transparent.png"
             alt="Be Well Center logo"
             width={200}
             height={200}

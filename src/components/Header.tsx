@@ -24,13 +24,13 @@ const Header = () => {
               className="flex items-center space-x-3 text-primary hover:opacity-90 transition-opacity"
             >
               <Image
-                src="/BeWell-icon-transparent.png"
+                src="/bewell_icon_transparent.png"
                 alt="Be Well Center"
                 width={48}
                 height={48}
               />
               <Image
-                src="/BeWell-logo-text-transparent.png"
+                src="/bewell_logo_text_transparent.png"
                 alt=""
                 width={160}
                 height={40}

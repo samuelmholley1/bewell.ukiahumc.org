@@ -71,7 +71,7 @@ export default function RootLayout({
     name: 'Be Well Center',
     description: siteDescription,
     url: 'https://bewell.ukiahumc.org',
-    logo: 'https://bewell.ukiahumc.org/BeWell-logo-transparent.png',
+    logo: 'https://bewell.ukiahumc.org/bewell_logo_transparent.png',
     telephone: '+1-707-462-6226',
     email: 'info@ukiahumc.org',
     address: {
