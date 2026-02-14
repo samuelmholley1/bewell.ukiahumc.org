@@ -40,7 +40,7 @@ export default function HowToHelp() {
   return (
     <Section id="help">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3">
+        <h2 id="help-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3">
           How You Can Help
         </h2>
         <p className="text-base sm:text-lg text-text/70 mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto">

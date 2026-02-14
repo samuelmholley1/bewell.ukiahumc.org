@@ -45,7 +45,7 @@ const Footer = () => {
                   />
                 </svg>
                 <div>
-                  <p>[Address TBD]</p>
+                  <p>270 N Pine St</p>
                   <p>Ukiah, CA 95482</p>
                 </div>
               </div>

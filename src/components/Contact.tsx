@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <Section id="contact" bgColor="cream">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
+        <h2 id="contact-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
           Get in Touch
         </h2>
         <p className="text-base sm:text-lg text-text/70 mb-8 sm:mb-10 max-w-xl mx-auto">
@@ -45,7 +45,7 @@ export default function Contact() {
           </a>
         </div>
 
-        <p className="text-sm text-text/50">
+        <p className="text-sm text-text/60">
           Be Well Center is supported by{' '}
           <a href="https://ukiahumc.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">
             Ukiah United Methodist Church

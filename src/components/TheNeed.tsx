@@ -18,7 +18,7 @@ export default function TheNeed() {
 
           {/* Content */}
           <div className="space-y-5">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
+            <h2 id="need-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
               The Need
             </h2>
             <p className="text-base sm:text-lg text-text/80 leading-relaxed text-pretty">

@@ -57,8 +57,38 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Be Well Center',
+    description: siteDescription,
+    url: 'https://bewell.ukiahumc.org',
+    logo: 'https://bewell.ukiahumc.org/BeWell-logo-transparent.png',
+    telephone: '+1-707-462-6226',
+    email: 'info@ukiahumc.org',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '270 N Pine St',
+      addressLocality: 'Ukiah',
+      addressRegion: 'CA',
+      postalCode: '95482',
+      addressCountry: 'US',
+    },
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Ukiah United Methodist Church',
+      url: 'https://ukiahumc.org',
+    },
+  };
+
   return (
     <html lang="en" className={`${inter.variable} ${merriweather.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col antialiased">
         <Header />
         <main className="flex-1">{children}</main>

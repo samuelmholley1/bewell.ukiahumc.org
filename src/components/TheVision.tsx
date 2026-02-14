@@ -35,7 +35,7 @@ export default function TheVision() {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-5 sm:space-y-6 order-2 lg:order-1">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
+            <h2 id="vision-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
               Our Vision
             </h2>
             <p className="text-base sm:text-lg text-text/80 leading-relaxed text-pretty">
