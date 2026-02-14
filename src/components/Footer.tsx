@@ -59,10 +59,10 @@ const Footer = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <a
-                  href="tel:+17074626226"
+                  href="tel:+17074623360"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  (707) 462-6226
+                  (707) 462-3360
                 </a>
               </div>
 
@@ -76,10 +76,10 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <a
-                  href="mailto:info@ukiahumc.org"
+                  href="mailto:bewell@ukiahumc.org"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  info@ukiahumc.org
+                  bewell@ukiahumc.org
                 </a>
               </div>
             </div>

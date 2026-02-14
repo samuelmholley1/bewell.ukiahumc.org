@@ -72,8 +72,8 @@ export default function RootLayout({
     description: siteDescription,
     url: 'https://bewell.ukiahumc.org',
     logo: 'https://bewell.ukiahumc.org/bewell_logo_transparent.png',
-    telephone: '+1-707-462-6226',
-    email: 'info@ukiahumc.org',
+    telephone: '+1-707-462-3360',
+    email: 'bewell@ukiahumc.org',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '270 N Pine St',

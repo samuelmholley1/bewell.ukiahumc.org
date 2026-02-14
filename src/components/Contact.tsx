@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-10">
           {/* Email */}
           <a
-            href="mailto:info@ukiahumc.org"
+            href="mailto:bewell@ukiahumc.org"
             className="card p-6 flex items-center gap-4 hover:shadow-lg transition-shadow group"
           >
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -24,13 +24,13 @@ export default function Contact() {
             </div>
             <div className="text-left">
               <p className="font-semibold text-text">Email Us</p>
-              <p className="text-text/60 text-sm">info@ukiahumc.org</p>
+              <p className="text-text/60 text-sm">bewell@ukiahumc.org</p>
             </div>
           </a>
 
           {/* Phone */}
           <a
-            href="tel:+17074626226"
+            href="tel:+17074623360"
             className="card p-6 flex items-center gap-4 hover:shadow-lg transition-shadow group"
           >
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -40,7 +40,7 @@ export default function Contact() {
             </div>
             <div className="text-left">
               <p className="font-semibold text-text">Call Us</p>
-              <p className="text-text/60 text-sm">(707) 462-6226</p>
+              <p className="text-text/60 text-sm">(707) 462-3360</p>
             </div>
           </a>
         </div>
