@@ -40,18 +40,18 @@ export default function HowToHelp() {
   return (
     <Section id="help">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3">
           How You Can Help
         </h2>
-        <p className="text-lg text-text/70 mb-12 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-text/70 mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto">
           Be Well Center doesn&apos;t exist yet — but it can, with your help.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
           {cards.map((card) => (
             <div
               key={card.title}
-              className="card flex flex-col items-center text-center p-8 hover:shadow-lg transition-shadow"
+              className="card flex flex-col items-center text-center p-5 sm:p-6 lg:p-8 hover:shadow-lg transition-shadow sm:[&:last-child]:col-span-2 lg:[&:last-child]:col-span-1"
             >
               <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-5">
                 {card.icon}

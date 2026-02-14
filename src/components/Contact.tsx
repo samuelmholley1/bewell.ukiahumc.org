@@ -4,14 +4,14 @@ export default function Contact() {
   return (
     <Section id="contact" bgColor="cream">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
           Get in Touch
         </h2>
-        <p className="text-lg text-text/70 mb-10 max-w-xl mx-auto">
+        <p className="text-base sm:text-lg text-text/70 mb-8 sm:mb-10 max-w-xl mx-auto">
           Ready to help — or just want to learn more? We&apos;d love to hear from you.
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-6 mb-10">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-10">
           {/* Email */}
           <a
             href="mailto:info@ukiahumc.org"

@@ -30,7 +30,7 @@ const Header = () => {
                 height={48}
                 className=""
               />
-              <span className="text-lg sm:text-2xl font-bold text-primary leading-none">
+              <span className="text-base sm:text-lg md:text-2xl font-bold text-primary leading-none">
                 Be Well Center
               </span>
             </a>

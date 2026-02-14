@@ -32,27 +32,27 @@ export default function TheVision() {
   return (
     <Section id="vision" bgColor="cream">
       <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
           {/* Content */}
-          <div className="space-y-6 order-2 md:order-1">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+          <div className="space-y-5 sm:space-y-6 order-2 lg:order-1">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
               Our Vision
             </h2>
-            <p className="text-lg text-text/80 leading-relaxed">
+            <p className="text-base sm:text-lg text-text/80 leading-relaxed text-pretty">
               Be Well Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities and families find peace of mind.
             </p>
             <ul className="space-y-4">
               {points.map((point, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="text-accent flex-shrink-0 mt-0.5">{point.icon}</span>
-                  <span className="text-lg text-text/80">{point.text}</span>
+                  <span className="text-base sm:text-lg text-text/80">{point.text}</span>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Photo */}
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg order-1 md:order-2">
+          <div className="relative aspect-[16/10] sm:aspect-[4/3] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2">
             <Image
               src="/vision-photo.png"
               alt="A bright, welcoming community space"
