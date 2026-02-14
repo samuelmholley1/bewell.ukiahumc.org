@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden"
+      className="relative overflow-hidden min-h-[calc(100svh-5rem)]"
     >
       {/* Background photo */}
       <div className="absolute inset-0 z-0">
@@ -12,13 +12,13 @@ export default function Hero() {
           src="/hero-bg.png"
           alt=""
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
         />
         <div className="absolute inset-0 bg-white/75" />
       </div>
 
-      <div className="container relative z-10 py-12 sm:py-16 md:py-24 lg:py-32 xl:py-36">
+      <div className="container relative z-10 flex items-center justify-center min-h-[calc(100svh-5rem)] py-12 sm:py-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center space-y-5 sm:space-y-6">
           <Image
             src="/BeWell-logo-transparent.png"
