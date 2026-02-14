@@ -18,18 +18,18 @@ export default function Hero() {
         <div className="absolute inset-0 bg-white/75" />
       </div>
 
-      <div className="container relative z-10 flex items-center justify-center min-h-[calc(100svh-5rem)] py-12 sm:py-16 md:py-20">
-        <div className="max-w-3xl mx-auto text-center space-y-5 sm:space-y-6">
+      <div className="container relative z-10 flex items-center justify-center min-h-[calc(100svh-5rem)] py-8 sm:py-10">
+        <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-5">
           <Image
             src="/BeWell-logo-transparent.png"
             alt="Be Well Center logo"
             width={200}
             height={200}
-            className="mx-auto w-28 sm:w-36 md:w-44 lg:w-[200px]"
+            className="mx-auto w-24 sm:w-32 md:w-36 lg:w-44 xl:w-[200px]"
             priority
           />
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight text-balance">
+          <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-6xl font-bold text-primary leading-tight text-balance">
             Ukiah needs a place for families facing memory loss.
           </h1>
 
@@ -37,7 +37,7 @@ export default function Hero() {
             We&rsquo;re building it. Help us open our doors.
           </p>
 
-          <div className="pt-2 sm:pt-4">
+          <div className="pt-1 sm:pt-2">
             <a
               href="#help"
               className="inline-block text-base sm:text-lg md:text-xl py-3 sm:py-4 px-8 sm:px-10 font-semibold rounded-lg shadow-lg transition-all duration-200 bg-primary text-white hover:bg-primary/90 hover:shadow-xl"
