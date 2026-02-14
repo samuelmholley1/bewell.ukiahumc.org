@@ -1,20 +1,28 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google";
+import { Cormorant_Garamond, Source_Serif_4, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-sans",
+  variable: "--font-heading",
 });
 
-const merriweather = Merriweather({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600"],
   display: "swap",
-  variable: "--font-serif",
+  variable: "--font-body",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  display: "swap",
+  variable: "--font-ui",
 });
 
 const siteTitle = "Be Well Center — Adult Day Memory Care (Opening Soon)";
@@ -48,7 +56,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   other: {
-    "theme-color": "#6B7F4E",
+    "theme-color": "#556B2F",
   },
 };
 
@@ -82,7 +90,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${inter.variable} ${merriweather.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${sourceSerif.variable} ${sourceSans.variable}`}>
       <head>
         <script
           type="application/ld+json"

@@ -46,7 +46,7 @@ export default function Contact() {
         </div>
 
         <p className="text-sm text-text/60">
-          Be Well Center is supported by{' '}
+          The Be Well Center is supported by{' '}
           <a href="https://ukiahumc.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">
             Ukiah United Methodist Church
           </a>{' '}

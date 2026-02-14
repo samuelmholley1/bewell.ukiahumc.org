@@ -44,7 +44,7 @@ export default function HowToHelp() {
           How You Can Help
         </h2>
         <p className="text-base sm:text-lg text-text/70 mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto">
-          Be Well Center doesn&apos;t exist yet — but it can, with your help.
+          The Be Well Center doesn&apos;t exist yet — but it can, with your help.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">

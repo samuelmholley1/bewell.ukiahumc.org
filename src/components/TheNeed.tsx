@@ -28,7 +28,7 @@ export default function TheNeed() {
               Caregivers burn out. Loved ones lose access to the social connection and structured activity that slows decline. Many are forced into residential care earlier than necessary.
             </p>
             <p className="text-base sm:text-lg font-semibold text-primary">
-              Be Well Center will change that.
+              The Be Well Center will change that.
             </p>
           </div>
         </div>

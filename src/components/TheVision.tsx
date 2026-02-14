@@ -39,7 +39,7 @@ export default function TheVision() {
               Our Vision
             </h2>
             <p className="text-base sm:text-lg text-text/80 leading-relaxed text-pretty">
-              Be Well Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities and families find peace of mind.
+              The Be Well Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities and families find peace of mind.
             </p>
             <ul className="space-y-4">
               {points.map((point, i) => (

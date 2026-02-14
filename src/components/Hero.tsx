@@ -18,29 +18,29 @@ export default function Hero() {
         <div className="absolute inset-0 bg-white/75" />
       </div>
 
-      <div className="container relative z-10 flex items-center justify-center min-h-[calc(100svh-5rem)] py-8 sm:py-10">
-        <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-5">
+      <div className="container relative z-10 flex items-center justify-center min-h-[calc(100svh-5rem)] py-6">
+        <div className="max-w-3xl mx-auto text-center space-y-3 sm:space-y-4">
           <Image
             src="/BeWell-logo-transparent.png"
             alt="Be Well Center logo"
             width={200}
             height={200}
-            className="mx-auto w-24 sm:w-32 md:w-36 lg:w-44 xl:w-[200px]"
+            className="mx-auto h-16 sm:h-20 md:h-24 lg:h-32 xl:h-40 max-h-[14svh] w-auto"
             priority
           />
 
-          <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-6xl font-bold text-primary leading-tight text-balance">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary leading-tight text-balance">
             Ukiah needs a place for families facing memory loss.
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-text/80 max-w-2xl mx-auto text-pretty">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text/80 max-w-2xl mx-auto text-pretty">
             We&rsquo;re building it. Help us open our doors.
           </p>
 
-          <div className="pt-1 sm:pt-2">
+          <div className="pt-1">
             <a
               href="#help"
-              className="inline-block text-base sm:text-lg md:text-xl py-3 sm:py-4 px-8 sm:px-10 font-semibold rounded-lg shadow-lg transition-all duration-200 bg-primary text-white hover:bg-primary/90 hover:shadow-xl"
+              className="inline-block text-sm sm:text-base md:text-lg lg:text-xl py-2.5 sm:py-3 md:py-4 px-6 sm:px-8 md:px-10 font-semibold rounded-lg shadow-lg transition-all duration-200 bg-primary text-white hover:bg-primary/90 hover:shadow-xl"
             >
               Get Involved
             </a>
