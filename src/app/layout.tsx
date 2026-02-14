@@ -25,7 +25,7 @@ const sourceSans = Source_Sans_3({
   variable: "--font-ui",
 });
 
-const siteTitle = "Be Well Center — Adult Day Services in Ukiah, CA (Opening Soon)";
+const siteTitle = "Be Well Adult Day Center — Ukiah, CA (Opening Soon)";
 const siteDescription =
   "A place of dignity for adults who need a little more care. Daytime support, connection, and respite for families in Ukiah, CA. Supported by Ukiah United Methodist Church.";
 
@@ -68,7 +68,7 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Be Well Center',
+    name: 'Be Well Adult Day Center',
     description: siteDescription,
     url: 'https://bewell.ukiahumc.org',
     logo: 'https://bewell.ukiahumc.org/bewell_logo_transparent.png',

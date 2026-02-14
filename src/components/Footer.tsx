@@ -13,16 +13,16 @@ const Footer = () => {
           {/* Organization Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-white mb-4">
-              Be Well Center
+              Be Well Adult Day Center
             </h3>
             <p className="text-white/80 leading-relaxed">
-              Adult Day Services in Ukiah, CA
+              Ukiah, CA
             </p>
             <p className="text-white/70 text-sm leading-relaxed">
               Supported by Ukiah United Methodist Church
             </p>
             <div className="text-sm text-white/60">
-              <p>&copy; {new Date().getFullYear()} Be Well Center</p>
+              <p>&copy; {new Date().getFullYear()} Be Well Adult Day Center</p>
             </div>
           </div>
 

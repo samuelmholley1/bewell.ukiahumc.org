@@ -28,7 +28,7 @@ export default function TheNeed() {
               Families are on their own, managing care around the clock with little relief. Caregivers burn out. Loved ones lose the social connection and structured activity that keeps them well. Many are forced into residential care earlier than necessary.
             </p>
             <p className="text-base sm:text-lg font-semibold text-primary">
-              The Be Well Center will change that.
+              The Be Well Adult Day Center will change that.
             </p>
           </div>
         </div>

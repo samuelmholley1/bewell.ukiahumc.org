@@ -39,7 +39,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text/80 max-w-xl mx-auto text-pretty">
-              The Be Well Center is coming to Ukiah &mdash; daytime support, connection, and respite for families.
+              The Be Well Adult Day Center is coming to Ukiah &mdash; daytime support, connection, and respite for families.
             </p>
 
             <div className="pt-1">
