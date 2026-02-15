@@ -200,3 +200,10 @@
   }
 }
 
+/* ─── No-print utility ─── */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
