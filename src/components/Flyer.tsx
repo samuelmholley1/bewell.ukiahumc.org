@@ -83,8 +83,9 @@ export default function Flyer() {
 
       {/* Flyer — 8.5 × 11 at 96dpi */}
       <div ref={printRef} className="flex justify-center">
+        <div className="rounded-xl shadow-lg overflow-hidden" style={{ width: '816px' }}>
         <div
-          className="flyer-container bg-white rounded-xl shadow-lg overflow-hidden flex flex-col"
+          className="flyer-container bg-white overflow-hidden flex flex-col"
           style={{ width: '816px', height: '1056px' }}
         >
           {/* Top banner — ~4% */}
@@ -193,6 +194,7 @@ export default function Flyer() {
               bewell.ukiahumc.org
             </p>
           </div>
+        </div>
         </div>
       </div>
     </>

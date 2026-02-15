@@ -198,6 +198,27 @@
     background-color: var(--color-primary);
     color: white;
   }
+
+  /* ─── Flyer & Brochure: Kill Tailwind v4 Preflight border artifacts ─── */
+  /* Tailwind v4 Preflight sets border-style:solid + border-color on ALL elements.
+     dom-to-image-more renders these as visible gray outlines on every div, svg, path, etc.
+     This is the same "NUCLEAR RESET" pattern used in mendolaborcoop.
+     Inline border styles (e.g. borderRight on brochure panels) naturally override
+     this reset because inline styles always beat stylesheet rules. */
+  .flyer-container,
+  .flyer-container *,
+  .flyer-container *::before,
+  .flyer-container *::after,
+  .brochure-side,
+  .brochure-side *,
+  .brochure-side *::before,
+  .brochure-side *::after {
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    box-shadow: none;
+    outline: none;
+  }
 }
 
 /* ─── No-print utility ─── */

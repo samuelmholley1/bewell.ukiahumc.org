@@ -98,8 +98,9 @@ export default function Brochure() {
           </span>
         </div>
 
+        <div className="rounded-xl shadow-lg mx-auto overflow-hidden mb-10" style={{ width: '1056px' }}>
         <div
-          className="brochure-side bg-white rounded-xl shadow-lg mx-auto overflow-hidden mb-10"
+          className="brochure-side bg-white overflow-hidden"
           style={{ width: '1056px', height: '816px' }}
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', height: '100%' }}>
@@ -228,6 +229,7 @@ export default function Brochure() {
             </div>
           </div>
         </div>
+        </div>
 
         {/* ─── SIDE B (Inside when folded) ─── */}
         <div className="no-print text-center mb-3 mt-10">
@@ -236,8 +238,9 @@ export default function Brochure() {
           </span>
         </div>
 
+        <div className="rounded-xl shadow-lg mx-auto overflow-hidden" style={{ width: '1056px' }}>
         <div
-          className="brochure-side bg-white rounded-xl shadow-lg mx-auto overflow-hidden"
+          className="brochure-side bg-white overflow-hidden"
           style={{ width: '1056px', height: '816px' }}
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', height: '100%' }}>
@@ -330,6 +333,7 @@ export default function Brochure() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>
