@@ -106,7 +106,7 @@ export default function Brochure() {
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', height: '100%' }}>
             {/* Panel 1 — Back cover */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
                 <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '24px' }}>
                   How You Can Help
@@ -167,7 +167,7 @@ export default function Brochure() {
             </div>
 
             {/* Panel 2 — Front cover */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', background: 'linear-gradient(to bottom, #ffffff, rgba(143,174,74,0.05), #ffffff)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '36px', textAlign: 'center' }}>
+            <div style={{ borderRight: '1px dashed #e5e7eb', background: 'linear-gradient(to bottom, #ffffff, rgba(143,174,74,0.05), #ffffff)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '48px 36px', textAlign: 'center' }}>
               <img
                 src="/bewell_logo_transparent.png"
                 alt="Be Well Center logo"
@@ -189,10 +189,11 @@ export default function Brochure() {
 
             {/* Panel 3 — Contact flap */}
             <div style={{ padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '24px' }}>
+              <div>
+              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '24px' }}>
                 Contact Us
               </h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 {[
                   { label: 'Email', value: 'bewell@ukiahumc.org', icon: 'M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75' },
                   { label: 'Phone', value: '(707) 462-3360', icon: 'M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z' },
@@ -227,6 +228,7 @@ export default function Brochure() {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -246,36 +248,40 @@ export default function Brochure() {
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', height: '100%' }}>
             {/* Panel 4 — Inside left: The Need */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
-                The Need
-              </h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-                <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
-                  In Mendocino County, there is <strong style={{ color: '#556B2F' }}>no adult day program</strong> for people who need supervised daytime support — whether due to memory loss, aging, disability, or simply the need for community.
-                </p>
-                <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
-                  Families are on their own, managing care around the clock with little relief. Caregivers burn out. Loved ones lose social connection and the structured activity that keeps them well.
-                </p>
-                <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
-                  Many are forced into residential care earlier than necessary — at great cost to families, and at the expense of their loved one&apos;s independence.
-                </p>
-                <div style={{ backgroundColor: 'rgba(217,154,43,0.1)', borderRadius: '8px', padding: '16px', marginTop: '14px' }}>
-                  <p style={{ fontSize: '15px', fontWeight: 600, color: '#556B2F', textAlign: 'center', fontFamily: '"Cormorant Garamond", serif' }}>
-                    The Be Well Center will change that.
+            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
+                  The Need
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+                  <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
+                    In Mendocino County, there is <strong style={{ color: '#556B2F' }}>no adult day program</strong> for people who need supervised daytime support — whether due to memory loss, aging, disability, or simply the need for community.
+                  </p>
+                  <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
+                    Families are on their own, managing care around the clock with little relief. Caregivers burn out. Loved ones lose social connection and the structured activity that keeps them well.
+                  </p>
+                  <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
+                    Many are forced into residential care earlier than necessary — at great cost to families, and at the expense of their loved one&apos;s independence.
                   </p>
                 </div>
+              </div>
+              <div style={{ backgroundColor: 'rgba(217,154,43,0.1)', borderRadius: '8px', padding: '16px' }}>
+                <p style={{ fontSize: '15px', fontWeight: 600, color: '#556B2F', textAlign: 'center', fontFamily: '"Cormorant Garamond", serif' }}>
+                  The Be Well Center will change that.
+                </p>
               </div>
             </div>
 
             {/* Panel 5 — Inside center: Our Vision */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', backgroundColor: 'rgba(143,174,74,0.05)', padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
-                Our Vision
-              </h3>
-              <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.7, marginBottom: '20px' }}>
-                The Be Well Adult Day Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities and families find peace of mind.
-              </p>
+            <div style={{ borderRight: '1px dashed #e5e7eb', backgroundColor: 'rgba(143,174,74,0.05)', padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
+                  Our Vision
+                </h3>
+                <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.7, marginBottom: '20px' }}>
+                  The Be Well Adult Day Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities and families find peace of mind.
+                </p>
+              </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 {[
                   'Safe, structured daytime programs',
@@ -297,40 +303,42 @@ export default function Brochure() {
             </div>
 
             {/* Panel 6 — Inside right: Who We Serve */}
-            <div style={{ padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
-                Who We Serve
-              </h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-                <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '14px' }}>
-                  <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', marginBottom: '4px' }}>Adults Who Need More Support</p>
-                  <p style={{ fontSize: '12px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
-                    Individuals living with memory loss, early-stage dementia, physical disabilities, or age-related conditions who benefit from structured activity and socialization.
-                  </p>
-                </div>
+            <div style={{ padding: '36px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
+                  Who We Serve
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+                  <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '14px' }}>
+                    <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', marginBottom: '4px' }}>Adults Who Need More Support</p>
+                    <p style={{ fontSize: '12px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
+                      Individuals living with memory loss, early-stage dementia, physical disabilities, or age-related conditions who benefit from structured activity and socialization.
+                    </p>
+                  </div>
 
-                <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '14px' }}>
-                  <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', marginBottom: '4px' }}>Family Caregivers</p>
-                  <p style={{ fontSize: '12px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
-                    Spouses, children, and partners who need reliable daytime respite to work, rest, attend to their own health, or simply recharge.
-                  </p>
-                </div>
+                  <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '14px' }}>
+                    <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', marginBottom: '4px' }}>Family Caregivers</p>
+                    <p style={{ fontSize: '12px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
+                      Spouses, children, and partners who need reliable daytime respite to work, rest, attend to their own health, or simply recharge.
+                    </p>
+                  </div>
 
-                <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '14px' }}>
-                  <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', marginBottom: '4px' }}>Our Whole Community</p>
-                  <p style={{ fontSize: '12px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
-                    When families are supported, communities thrive. The Be Well Center strengthens the fabric of care across Mendocino County.
-                  </p>
+                  <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '14px' }}>
+                    <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', marginBottom: '4px' }}>Our Whole Community</p>
+                    <p style={{ fontSize: '12px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
+                      When families are supported, communities thrive. The Be Well Center strengthens the fabric of care across Mendocino County.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div style={{ marginTop: '16px', borderTop: '1px solid #f3f4f6', paddingTop: '16px', textAlign: 'center' }}>
-                  <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif' }}>
-                    Together, we can build something beautiful.
-                  </p>
-                  <p style={{ fontSize: '11px', color: 'rgba(43,43,43,0.5)', marginTop: '4px', fontFamily: '"Source Serif 4", Georgia, serif' }}>
-                    bewell.ukiahumc.org
-                  </p>
-                </div>
+              <div style={{ borderTop: '1px solid #f3f4f6', paddingTop: '16px', textAlign: 'center' }}>
+                <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif' }}>
+                  Together, we can build something beautiful.
+                </p>
+                <p style={{ fontSize: '11px', color: 'rgba(43,43,43,0.5)', marginTop: '4px', fontFamily: '"Source Serif 4", Georgia, serif' }}>
+                  bewell.ukiahumc.org
+                </p>
               </div>
             </div>
           </div>
