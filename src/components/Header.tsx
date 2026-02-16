@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo / Brand */}
           <div className="flex-shrink-0">
             <a
-              href="#top"
+              href="/"
               className="flex items-center space-x-3 text-primary hover:opacity-90 transition-opacity"
             >
               <Image
