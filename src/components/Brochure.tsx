@@ -151,7 +151,7 @@ export default function Brochure() {
                 <div>
                   <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '16px', marginBottom: '4px' }}>Join Our Board</p>
                   <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '14px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
-                    We need leaders in healthcare, finance, nonprofit, and community development.
+                    We need leaders in healthcare, finance, nonprofit work, and community development.
                   </p>
                 </div>
               </div>
