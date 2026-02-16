@@ -8,7 +8,6 @@ const navigation = [
   { name: 'Our Vision', href: '/#vision' },
   { name: 'Help', href: '/#help' },
   { name: 'Contact', href: '/#contact' },
-  { name: 'Flyer & Brochure', href: '/flyer-brochure' },
 ];
 
 const Header = () => {

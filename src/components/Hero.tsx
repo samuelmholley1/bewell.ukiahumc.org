@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden min-h-screen"
+      className="relative overflow-hidden h-[calc(100vh-5rem)]"
     >
       {/* Background photo */}
       <div className="absolute inset-0 z-0">
@@ -18,10 +18,10 @@ export default function Hero() {
         <div className="absolute inset-0 bg-white/75" />
       </div>
 
-      <div className="container relative z-10 flex items-center justify-center min-h-screen py-8 sm:py-12">
+      <div className="container relative z-10 flex items-center justify-center h-full py-8 sm:py-12">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center justify-items-center w-full max-w-5xl mx-auto">
           {/* Logo — stacked on mobile, left column on desktop */}
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:justify-end lg:pr-6">
             <Image
               src="/bewell_logo_transparent.png"
               alt="Be Well Center logo"
