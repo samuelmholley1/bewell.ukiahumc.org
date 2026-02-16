@@ -41,14 +41,14 @@ export default function Flyer() {
       document.head.appendChild(styleTag);
       await new Promise(resolve => setTimeout(resolve, 100));
 
-      const imgData = await domtoimage.toPng(flyer, {
-        quality: 1,
+      const imgData = await domtoimage.toJpeg(flyer, {
+        quality: 0.95,
         scale: 3,
         bgcolor: '#ffffff',
         style: { transform: 'scale(1)', transformOrigin: 'top left' },
       });
 
-      pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+      pdf.addImage(imgData, 'JPEG', 0, 0, 8.5, 11);
       styleTag.remove();
       pdf.save('bewell-flyer.pdf');
     } catch (error) {
