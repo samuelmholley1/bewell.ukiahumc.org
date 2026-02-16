@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const navigation = [
   { name: 'The Need', href: '/#need' },
@@ -19,7 +20,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo / Brand */}
           <div className="flex-shrink-0">
-            <a
+            <Link
               href="/"
               className="flex items-center space-x-3 text-primary hover:opacity-90 transition-opacity"
             >
@@ -37,7 +38,7 @@ const Header = () => {
                 height={40}
                 className="h-9 sm:h-10 md:h-11 w-auto"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
