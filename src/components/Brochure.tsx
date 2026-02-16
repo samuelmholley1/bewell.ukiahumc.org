@@ -45,14 +45,14 @@ export default function Brochure() {
       for (let i = 0; i < sides.length; i++) {
         if (i > 0) pdf.addPage('letter', 'landscape');
         const side = sides[i] as HTMLElement;
-        const imgData = await domtoimage.toPng(side, {
-          quality: 1,
+        const imgData = await domtoimage.toJpeg(side, {
+          quality: 0.95,
           scale: 3,
           bgcolor: '#ffffff',
           style: { transform: 'scale(1)', transformOrigin: 'top left' },
         });
         // 11 x 8.5 landscape
-        pdf.addImage(imgData, 'PNG', 0, 0, 11, 8.5);
+        pdf.addImage(imgData, 'JPEG', 0, 0, 11, 8.5);
       }
 
       styleTag.remove();
