@@ -105,23 +105,23 @@ export default function Brochure() {
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', height: '100%' }}>
             {/* Panel 1 — Back cover */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '28px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <div>
-                <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
                   How You Can Help
                 </h3>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
                   {/* Donate */}
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                    <div style={{ width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(217,154,43,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'rgba(217,154,43,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <svg style={{ width: '20px', height: '20px', color: '#D99A2B' }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                       </svg>
                     </div>
                     <div>
-                      <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '14px' }}>Donate</p>
-                      <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '13px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.4 }}>
+                      <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '15px' }}>Donate</p>
+                      <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '14px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
                         Your gift helps us secure a facility, hire staff, and open our doors.
                       </p>
                     </div>
@@ -129,14 +129,14 @@ export default function Brochure() {
 
                   {/* Volunteer */}
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                    <div style={{ width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(143,174,74,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'rgba(143,174,74,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <svg style={{ width: '20px', height: '20px', color: '#8FAE4A' }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
                       </svg>
                     </div>
                     <div>
-                      <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '14px' }}>Volunteer</p>
-                      <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '13px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.4 }}>
+                      <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '15px' }}>Volunteer</p>
+                      <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '14px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
                         Help with activities, events, outreach, or facility setup.
                       </p>
                     </div>
@@ -144,14 +144,14 @@ export default function Brochure() {
 
                   {/* Join Board */}
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                    <div style={{ width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(108,166,193,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'rgba(108,166,193,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <svg style={{ width: '20px', height: '20px', color: '#6CA6C1' }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
                       </svg>
                     </div>
                     <div>
-                      <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '14px' }}>Join Our Board</p>
-                      <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '13px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.4 }}>
+                      <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '15px' }}>Join Our Board</p>
+                      <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '14px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
                         We need leaders in healthcare, finance, nonprofit, or community development.
                       </p>
                     </div>
@@ -159,14 +159,14 @@ export default function Brochure() {
                 </div>
               </div>
 
-              <div style={{ borderTop: '1px solid #f3f4f6', paddingTop: '16px', textAlign: 'center', fontSize: '12px', color: 'rgba(43,43,43,0.5)' }}>
+              <div style={{ borderTop: '1px solid #f3f4f6', paddingTop: '14px', marginTop: '24px', textAlign: 'center', fontSize: '12px', color: 'rgba(43,43,43,0.5)' }}>
                 <p>A project of Ukiah United Methodist Church</p>
                 <p>bewell.ukiahumc.org</p>
               </div>
             </div>
 
             {/* Panel 2 — Front cover */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', background: 'linear-gradient(to bottom, #ffffff, rgba(143,174,74,0.05), #ffffff)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '40px', textAlign: 'center' }}>
+            <div style={{ borderRight: '1px dashed #e5e7eb', background: 'linear-gradient(to bottom, #ffffff, rgba(143,174,74,0.05), #ffffff)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '28px', textAlign: 'center' }}>
               <img
                 src="/bewell_logo_transparent.png"
                 alt="Be Well Center logo"
@@ -187,7 +187,7 @@ export default function Brochure() {
             </div>
 
             {/* Panel 3 — Contact flap */}
-            <div style={{ padding: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ padding: '28px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '20px' }}>
                 Contact Us
               </h3>
@@ -245,11 +245,11 @@ export default function Brochure() {
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', height: '100%' }}>
             {/* Panel 4 — Inside left: The Need */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '32px', display: 'flex', flexDirection: 'column' }}>
-              <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '16px' }}>
+            <div style={{ borderRight: '1px dashed #e5e7eb', padding: '28px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '16px' }}>
                 The Need
               </h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
                   In Mendocino County, there is <strong style={{ color: '#556B2F' }}>no adult day program</strong> for people who need supervised daytime support — whether due to memory loss, aging, disability, or simply the need for community.
                 </p>
@@ -259,8 +259,8 @@ export default function Brochure() {
                 <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6 }}>
                   Many are forced into residential care earlier than necessary — at great cost to families, and at the expense of their loved one&apos;s independence.
                 </p>
-                <div style={{ backgroundColor: 'rgba(217,154,43,0.1)', borderRadius: '8px', padding: '16px', marginTop: 'auto' }}>
-                  <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', textAlign: 'center', fontFamily: '"Cormorant Garamond", serif' }}>
+                <div style={{ backgroundColor: 'rgba(217,154,43,0.1)', borderRadius: '8px', padding: '16px', marginTop: '8px' }}>
+                  <p style={{ fontSize: '15px', fontWeight: 600, color: '#556B2F', textAlign: 'center', fontFamily: '"Cormorant Garamond", serif' }}>
                     The Be Well Center will change that.
                   </p>
                 </div>
@@ -268,14 +268,14 @@ export default function Brochure() {
             </div>
 
             {/* Panel 5 — Inside center: Our Vision */}
-            <div style={{ borderRight: '1px dashed #e5e7eb', backgroundColor: 'rgba(143,174,74,0.05)', padding: '32px', display: 'flex', flexDirection: 'column' }}>
-              <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '16px' }}>
+            <div style={{ borderRight: '1px dashed #e5e7eb', backgroundColor: 'rgba(143,174,74,0.05)', padding: '28px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '16px' }}>
                 Our Vision
               </h3>
               <p style={{ fontSize: '14px', color: 'rgba(43,43,43,0.8)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.6, marginBottom: '16px' }}>
                 The Be Well Adult Day Center will be a place of dignity, calm, and connection — where participants enjoy meaningful activities and families find peace of mind.
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {[
                   'Safe, structured daytime programs',
                   'Memory-care–friendly activities & engagement',
@@ -296,11 +296,11 @@ export default function Brochure() {
             </div>
 
             {/* Panel 6 — Inside right: Who We Serve */}
-            <div style={{ padding: '32px', display: 'flex', flexDirection: 'column' }}>
-              <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '16px' }}>
+            <div style={{ padding: '28px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3 style={{ fontSize: '24px', fontWeight: 700, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif', marginBottom: '16px' }}>
                 Who We Serve
               </h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', flex: 1 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '14px' }}>
                   <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', marginBottom: '4px' }}>Adults Who Need More Support</p>
                   <p style={{ fontSize: '12px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
@@ -322,7 +322,7 @@ export default function Brochure() {
                   </p>
                 </div>
 
-                <div style={{ marginTop: 'auto', borderTop: '1px solid #f3f4f6', paddingTop: '16px', textAlign: 'center' }}>
+                <div style={{ marginTop: '12px', borderTop: '1px solid #f3f4f6', paddingTop: '14px', textAlign: 'center' }}>
                   <p style={{ fontSize: '14px', fontWeight: 600, color: '#556B2F', fontFamily: '"Cormorant Garamond", serif' }}>
                     Together, we can build something beautiful.
                   </p>
