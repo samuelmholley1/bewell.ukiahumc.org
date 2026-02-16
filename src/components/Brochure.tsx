@@ -151,7 +151,7 @@ export default function Brochure() {
                 <div>
                   <p style={{ fontWeight: 600, color: '#2B2B2B', fontSize: '16px', marginBottom: '4px' }}>Join Our Board</p>
                   <p style={{ color: 'rgba(43,43,43,0.6)', fontSize: '14px', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.5 }}>
-                    We need leaders in healthcare, finance, nonprofit, or community development.
+                    We need leaders in healthcare, finance, nonprofit, and community development.
                   </p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function Brochure() {
               <div style={{ backgroundColor: 'rgba(85,107,47,0.05)', borderRadius: '8px', padding: '16px' }}>
                 <p style={{ fontSize: '15px', fontWeight: 600, color: '#556B2F', marginBottom: '6px' }}>Family Caregivers</p>
                 <p style={{ fontSize: '13px', color: 'rgba(43,43,43,0.7)', fontFamily: '"Source Serif 4", Georgia, serif', lineHeight: 1.55 }}>
-                  Spouses, children, and partners who need reliable daytime respite to work, rest, attend to their own health, or simply recharge.
+                  Spouses, partners, and other family members who need reliable daytime respite to work, rest, attend to their own health, or simply recharge.
                 </p>
               </div>
 
