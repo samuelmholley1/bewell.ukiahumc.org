@@ -26,9 +26,9 @@ const Header = () => {
               <Image
                 src="/bewell_icon_transparent.png"
                 alt="Be Well Center"
-                width={48}
-                height={48}
-                className="w-10 h-10 sm:w-12 sm:h-12"
+                width={848}
+                height={664}
+                className="h-10 sm:h-12 w-auto"
               />
               <Image
                 src="/bewell_logo_text_transparent.png"

@@ -19,21 +19,21 @@ export default function Hero() {
       </div>
 
       <div className="container relative z-10 flex items-center justify-center h-full py-8 sm:py-12">
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center justify-items-center w-full max-w-5xl mx-auto">
-          {/* Logo — stacked on mobile, left column on desktop */}
-          <div className="flex justify-center lg:justify-end lg:pr-6">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 items-center justify-items-center w-full max-w-6xl mx-auto">
+          {/* Logo — stacked on mobile, left 1/3 on desktop */}
+          <div className="flex justify-center">
             <Image
               src="/bewell_logo_transparent.png"
               alt="Be Well Center logo"
               width={500}
               height={500}
-              className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 drop-shadow-lg"
+              className="w-48 sm:w-56 md:w-64 lg:w-60 xl:w-72 drop-shadow-lg"
               priority
             />
           </div>
 
-          {/* Text — stacked on mobile, right column on desktop */}
-          <div className="text-center space-y-4 sm:space-y-5">
+          {/* Text — stacked on mobile, right 2/3 on desktop */}
+          <div className="text-center space-y-4 sm:space-y-5 lg:col-span-2">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-primary leading-snug text-balance">
               A place of dignity for adults who need a little more care.
             </h1>
